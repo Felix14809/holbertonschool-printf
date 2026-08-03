@@ -54,9 +54,13 @@ int _printf(const char *format, ...)
 					printed += int_to_hex('X', va_arg(ap, unsigned int));
 					break;
 				default:
-					_putchar('%');
-					_putchar(format[i]);
-					printed += 2;
+					if (format[i - 2] != '%')
+					{
+						_putchar('%');
+						_putchar(format[i]);
+						printed += 2;
+					}
+					
 					break;
 			}
 			if (format[i])
