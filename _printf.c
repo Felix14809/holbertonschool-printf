@@ -26,7 +26,8 @@ int _printf(const char *format, ...)
 					printed += 1;
 					break;
 				case 's':
-					str = va_arg(ap, char *);
+					if ((str = va_arg(ap, char *)) == NULL)
+						str = "(null)";
 					while (str[str_len])
 						str_len++;
 					write(1, str, str_len);
