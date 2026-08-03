@@ -35,7 +35,7 @@ int print_int(int num)
 		i++;
 	}
 	write(1, str, len);
-	return (len);
+	return (len - 1);
 }
 
 
