@@ -67,7 +67,6 @@ int _printf(const char *format, ...)
 			printed++;
 		}
 	}
-	printf("%d\n", printed);
 	va_end(ap);
 	return (printed);
 }
