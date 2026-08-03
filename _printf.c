@@ -62,8 +62,7 @@ int _printf(const char *format, ...)
 		else if (format[i])
 		{
 			_putchar (format[i]);
-			if (format[i] != '\n')
-				printed++;
+			printed++;
 			i++;
 		}
 	}
