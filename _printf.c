@@ -16,6 +16,12 @@ int _printf(const char *format, ...)
 	va_start(ap, format);
 	while (format[i])
 	{
+		if (format[i] == '%' && format[i + 1] == '%')
+		{
+			_putchar('%');
+			printed++;
+			i++;
+		}
 		if (format[i] == '%' && format[i - 1] != '\'')
 		{
 			i++;
@@ -46,8 +52,11 @@ int _printf(const char *format, ...)
 				case 'X':
 					printed += int_to_hex('X', va_arg(ap, unsigned int));
 					break;
+				default:
+					break;
 			}
-			i++;
+			if (format[i])
+				i++;
 		}
 		else if (format[i])
 		{
