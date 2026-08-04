@@ -12,5 +12,6 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int int_to_hex(char, unsigned int num);
 int print_int(int num);
+int int_to_binary(unsigned int num);
 
 #endif

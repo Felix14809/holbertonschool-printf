@@ -10,6 +10,11 @@ int int_to_hex(char cap, unsigned int num)
 	
 	len = 0;
 	temp = num;
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	while (temp > 0)
 	{
 		temp /= 16;
@@ -17,6 +22,8 @@ int int_to_hex(char cap, unsigned int num)
 	}
 	temp = 0;
 	str = malloc((len + 1) * sizeof(char));
+	if (str == NULL)
+		return (-1);
 	str[len] = '\0';
 	while (len > 0)
 	{

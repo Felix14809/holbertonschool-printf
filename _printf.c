@@ -48,6 +48,9 @@ int _printf(const char *format, ...)
 				case 'X':
 					printed += int_to_hex('X', va_arg(ap, unsigned int));
 					break;
+				case 'b':
+					printed += int_to_binary(va_arg(ap, unsigned int));
+					break;
 				case '%':
 					_putchar('%');
 					printed++;
