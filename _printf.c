@@ -51,6 +51,12 @@ int _printf(const char *format, ...)
 				case 'b':
 					printed += int_to_binary(va_arg(ap, unsigned int));
 					break;
+				case 'o':
+					printed += int_to_octal(va_arg(ap, unsigned int));
+					break;
+				case 'u':
+					printed += int_to_unsigned(va_arg(ap, unsigned int));
+					break;
 				case '%':
 					_putchar('%');
 					printed++;
