@@ -26,11 +26,19 @@ int print_int(int num)
 	str = malloc((len + 1) * sizeof(char));
 	if (neg == 0)
 		str[0] = '-';
-	while (i < len)
+	if (num == 0)
 	{
-		str[len - i] = (num % 10) + '0';
-		num /= 10;
-		i++;
+		len++;
+		str[len - i] = '0';
+	}
+	else
+	{
+		while (i < len)
+		{
+			str[len - i] = (num % 10) + '0';
+			num /= 10;
+			i++;
+		}
 	}
 	write(1, str + neg, len - neg);
 	free(str);
