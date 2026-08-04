@@ -24,12 +24,19 @@ int print_int(int num)
 		len++;
 	}
 	str = malloc((len + 1) * sizeof(char));
+	if (str == NULL)
+		return (-1);
 	if (neg == 0)
 		str[0] = '-';
 	if (num == 0)
 	{
 		len++;
 		str[len - i] = '0';
+	}
+	else if (num == INT_MIN)
+	{
+		write(1, "-2147483648", 11);
+		return (11);
 	}
 	else
 	{
