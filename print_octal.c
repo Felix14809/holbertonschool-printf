@@ -1,7 +1,9 @@
 #include "main.h"
 /**
-  *int_to_octal - Converts and interger to hexadecimal string
-  *
+  * int_to_octal - Converts and interger to hexadecimal string
+  * @num: Integer to print as octal
+  * 
+  * Return: Number of characters printed
   */
 int int_to_octal(unsigned int num)
 {

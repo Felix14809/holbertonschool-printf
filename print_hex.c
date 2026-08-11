@@ -1,7 +1,10 @@
 #include "main.h"
 /**
-  *int_to_hex - Converts and interger to hexadecimal string
-  *
+  * int_to_hex - Converts and interger to hexadecimal string
+  * @cap: Character to determine if the hex is capitalized or not
+  * @num: Integer to print as hexadecimal
+  * 
+  * Return: Number of characters printed
   */
 int int_to_hex(char cap, unsigned int num)
 {
