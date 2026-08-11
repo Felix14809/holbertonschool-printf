@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *
- *
- *
+ * print_int - Prints an integer to stdout
+ * @num: Integer to print
+ * 
+ * Return: Number of characters printed
  */
 int print_int(int num)
 {

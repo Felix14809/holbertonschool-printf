@@ -1,7 +1,9 @@
 #include "main.h"
 /**
-  *int_to_usigned - Converts and interger to hexadecimal string
-  *
+  * int_to_usigned - Converts and interger to hexadecimal string
+  * @num: Integer to print
+  * 
+  * Return: Number of characters printed
   */
 int int_to_unsigned(unsigned int num)
 {
