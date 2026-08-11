@@ -1,5 +1,5 @@
 # Integration Project: printf
-Directory for Integration Project: printf at Holberton completed with Felix.
+Directory for Integration Project: printf at Holberton completed by Chris & Felix.
 ## Header file 
 [main.h](./main.h)
 ## Compiler
@@ -25,4 +25,3 @@ The following files are included in this project:
 * An uncoupled % at end of string should print nothing and return -1. This version will print everything before the uncoupled % and also return -1
 * Putting format specifiers that are not b, c, X, x, i, d, o, s, or u, will print the specifier instead.
 * When converting an integer to a string in different functions the pointer used is not terminated by a null byte
-* Not betty compliant
