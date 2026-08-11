@@ -10,21 +10,19 @@ int print_int(int num)
 	char *str;
 	int i = 1, temp = 1, len = 1, neg = 1;
 
-	str = malloc((len + 1) * sizeof(char));
-	if (str == NULL)
-		return (-1);
 	if (num < 0)
-	{
-		neg = 0;
-		num = num * (-1);
-		str[0] = '-';
-	}
+		neg = 0, num = num * (-1);
 	temp = num;
 	while (temp > 0)
 	{
 		temp /= 10;
 		len++;
 	}
+	str = malloc((len + 1) * sizeof(char));
+	if (str == NULL)
+		return (-1);
+	if (neg == 0)
+		str[0] = '-';
 	if (num == 0)
 	{
 		len++;
