@@ -9,15 +9,20 @@
 int _printf(const char *format, ...)
 {
 	va_list ap;
-	int i, len, printed;
+	int i = 0, len = 0, printed = 0, percentage = 0;
 
-	printed = 0;
-	i = 0;
-	len = 0;
 	while (format[len])
 	{
-		if (format[len] == '%' && format[len - 1] != '%' && format[len + 1] == '\0')
-			return (-1);
+		if (format[len] == '%' && format[len + 1] == '\0')
+		{
+			while (format[len] == '%')
+			{
+				percentage++, len--;
+			}
+			if (percentage % 2 == 1)
+				return (-1);
+			break;
+		}
 		len++;
 	}
 	va_start(ap, format);
