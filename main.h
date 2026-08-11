@@ -16,5 +16,6 @@ int int_to_binary(unsigned int num);
 int int_to_octal(unsigned int num);
 int int_to_unsigned(unsigned int num);
 int print_str(char *str);
+char *hex_switch(unsigned int len, unsigned int num);
 
 #endif
