@@ -2,7 +2,10 @@
 Directory for Integration Project: printf at Holberton completed with Felix.
 ## Header file 
 [main.h](./main.h)
-
+## Compiler
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+```
 ## Project File Table 
 The following files are included in this project:
 
