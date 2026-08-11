@@ -2,21 +2,22 @@
 /**
  * print_int - Prints an integer to stdout
  * @num: Integer to print
- * 
+ *
  * Return: Number of characters printed
  */
 int print_int(int num)
 {
 	char *str;
-	int i, temp, len, neg;
+	int i = 1, temp = 1, len = 1, neg = 1;
 
-	i = 1;
-	len = 1;
-	neg = 1;
+	str = malloc((len + 1) * sizeof(char));
+	if (str == NULL)
+		return (-1);
 	if (num < 0)
 	{
 		neg = 0;
 		num = num * (-1);
+		str[0] = '-';
 	}
 	temp = num;
 	while (temp > 0)
@@ -24,11 +25,6 @@ int print_int(int num)
 		temp /= 10;
 		len++;
 	}
-	str = malloc((len + 1) * sizeof(char));
-	if (str == NULL)
-		return (-1);
-	if (neg == 0)
-		str[0] = '-';
 	if (num == 0)
 	{
 		len++;
