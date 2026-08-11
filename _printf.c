@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- *
- *
- *
+ * _printf - Custom printf function that prints formatted output to stdout
+ * @format: Format string containing characters and format specifiers
+ * @...: Variable number of arguments to be formatted and printed
+ * 
+ * Return: Total number of characters printed (excluding null byte)
  */
 int _printf(const char *format, ...)
 {
