@@ -13,9 +13,9 @@ int main(void)
     unsigned int ui;
     ui = (unsigned int)INT_MAX + 1024;
     len = _printf("%b\n", 0);
-    _printf("%b\n", 127);
-    _printf("%u\n", 127);
-    _printf("%o\n", 1258);
+    _printf("%K");
+    printf("%K");
+    
 
     
     _printf("Length:[%d, %i]\n", len, len);

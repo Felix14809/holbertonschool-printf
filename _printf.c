@@ -7,12 +7,17 @@
 int _printf(const char *format, ...)
 {
 	va_list ap;
-	int i, str_len, printed;
-	char *str;
+	int i, len, printed;
 
 	printed = 0;
 	i = 0;
-	str_len = 0;
+	len = 0;
+	while (format[len])
+	{
+		if (format[len] == '%' && format[len - 1] != '%' && format[len + 1] == '\0')
+			return (-1);
+		len++;
+	}
 	va_start(ap, format);
 	while (format[i])
 	{
@@ -28,18 +33,10 @@ int _printf(const char *format, ...)
 					printed += 1;
 					break;
 				case 's':
-					if ((str = va_arg(ap, char *)) == NULL)
-						str = "(null)";
-					while (str[str_len])
-						str_len++;
-					write(1, str, str_len);
-					printed += str_len;
-					str_len = 0;
-					break;
-				case 'i':
-					printed += print_int(va_arg(ap, int));
+					printed += print_str(va_arg(ap, char *));
 					break;
 				case 'd':
+				case 'i':
 					printed += print_int(va_arg(ap, int));
 					break;
 				case 'x':

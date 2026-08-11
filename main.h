@@ -15,5 +15,6 @@ int print_int(int num);
 int int_to_binary(unsigned int num);
 int int_to_octal(unsigned int num);
 int int_to_unsigned(unsigned int num);
+int print_str(char *str);
 
 #endif
