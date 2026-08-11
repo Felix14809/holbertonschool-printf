@@ -14,7 +14,8 @@ int int_to_hex(char, unsigned int num);
 int print_int(int num);
 int int_to_binary(unsigned int num);
 int int_to_octal(unsigned int num);
-int int_to_unsigned(unsigned int num);
+int int_to_u(unsigned int num);
 int print_str(char *str);
+int print_type(char type, va_list ap);
 
 #endif

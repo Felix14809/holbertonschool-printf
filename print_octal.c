@@ -2,14 +2,14 @@
 /**
   * int_to_octal - Converts and interger to hexadecimal string
   * @num: Integer to print as octal
-  * 
+  *
   * Return: Number of characters printed
   */
 int int_to_octal(unsigned int num)
 {
 	char *str;
 	unsigned int temp, len;
-	
+
 	len = 0;
 	temp = num;
 	if (num == 0)
@@ -31,7 +31,7 @@ int int_to_octal(unsigned int num)
 	{
 		temp = num % 8;
 		num /= 8;
-		len--;	
+		len--;
 		str[len] = temp + '0';
 	}
 	while (str[len])
@@ -40,4 +40,4 @@ int int_to_octal(unsigned int num)
 		len++;
 	}
 	return (len);
-}	
+}
