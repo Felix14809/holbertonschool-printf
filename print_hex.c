@@ -32,5 +32,6 @@ int int_to_hex(char cap, unsigned int num)
 		_putchar(str[len]);
 		len++;
 	}
+	free(str);
 	return (len);
 }
