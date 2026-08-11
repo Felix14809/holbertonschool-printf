@@ -34,6 +34,6 @@ int print_type(char type, va_list ap)
 		default:
 			_putchar('%');
 			_putchar(type);
-			return (2);
+			return (0);
 	}
 }

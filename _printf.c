@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 			{
 				percentage++, len--;
 			}
-			if (percentage % 2 == 1)
+			if (len == 0 || percentage % 2 == 1)
 				return (-1);
 			break;
 		}
@@ -28,8 +28,6 @@ int _printf(const char *format, ...)
 	va_start(ap, format);
 	while (format[i])
 	{
-		if (format[i] == '%' && format[i + 1] == '\0' && i == 0)
-			return (-1);
 		if (format[i] == '%' && format[i - 1] != '\'')
 		{
 			i++;

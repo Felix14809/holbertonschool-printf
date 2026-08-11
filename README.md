@@ -22,8 +22,12 @@ The following files are included in this project:
 |     [print_uhex.c](./print_uhex.c)      |      Prints an integer in uppercase hexidecimal and returns characters printed.          |
 |     [print_unsigned_int.c](./print_unsigned_int.c)      |      Prints a positive integer and returns characters printed.       |
 |     [hex_switch.c](./hex_switch.c)      |      Converts a decimal number into hex and returns pointer to a string       |
+|     [print_float.c](./print_float.c)      |      Prints a float and returns printed characters      |
 
 
 ## Known limitations
-* Putting format specifiers that are not b, c, X, x, i, d, o, s, or u, will print the specifier instead.
+* Doesn't have all the format specifier that printf does
+* Float and double is fixed to 6 decimals and the last digit is slightly off
 * When converting an integer to a string in different functions the pointer used is not terminated by a null byte
+## Advantages
+* Better outputs with known specifier but empty argument list
