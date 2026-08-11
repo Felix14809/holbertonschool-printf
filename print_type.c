@@ -28,6 +28,9 @@ int print_type(char type, va_list ap)
 			return (int_to_octal(va_arg(ap, unsigned int)));
 		case 'u':
 			return (int_to_u(va_arg(ap, unsigned int)));
+		case 'f':
+		case 'd':
+			return (print_float(va_arg(ap, double)));
 		case '%':
 			_putchar('%');
 			return (1);
