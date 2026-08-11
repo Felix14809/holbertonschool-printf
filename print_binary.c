@@ -2,14 +2,14 @@
 /**
   * int_to_binary - Converts and interger to hexadecimal string
   * @num: Integer to print as binary
-  * 
+  *
   * Return: Number of characters printed
   */
 int int_to_binary(unsigned int num)
 {
 	char *str;
 	unsigned int temp, len;
-	
+
 	len = 0;
 	temp = num;
 	if (num == 0)
@@ -31,7 +31,7 @@ int int_to_binary(unsigned int num)
 	{
 		temp = num % 2;
 		num /= 2;
-		len--;	
+		len--;
 		str[len] = temp + '0';
 	}
 	while (str[len])
@@ -40,4 +40,4 @@ int int_to_binary(unsigned int num)
 		len++;
 	}
 	return (len);
-}	
+}
