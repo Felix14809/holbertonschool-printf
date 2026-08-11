@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-  * int_to_unsigned - Converts and interger to hexadecimal string
+  * int_to_u - Converts and interger to hexadecimal string
   * @num: Integer to print
   *
   * Return: Number of characters printed
   */
-int int_to_unsigned(unsigned int num)
+int int_to_u(unsigned int num)
 {
 	char *str;
 	unsigned int temp, len;
