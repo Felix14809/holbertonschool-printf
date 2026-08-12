@@ -11,7 +11,7 @@ The following files are included in this project:
 
 | File      | Description |
 |---------- |-------------|
-|    [_printf.c](./printf.c)       |      Prints anything and returns characters printed. Accepts b, c, d, i, o, s, u, f, d, x, and X as format specifiers.       |
+|    [_printf.c](./_printf.c)       |      Prints anything and returns characters printed. Accepts b, c, d, i, o, s, u, f, d, x, and X as format specifiers.       |
 |     [print_type.c](./print_type.c)      |      Calls the appropriate function and returns the result of that function    |
 |     [print_bin.c](./print_bin.c)      |       Prints a positive integer in binary and returns characters printed.      |
 |     [print_char.c](./print_char.c)      |      Prints a single character and returns 1.       |
