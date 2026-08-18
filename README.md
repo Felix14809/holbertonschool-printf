@@ -14,13 +14,11 @@ The following files are included in this project:
 |    [_printf.c](./_printf.c)       |      Prints anything and returns characters printed. Accepts b, c, d, i, o, s, u, f, d, x, and X as format specifiers.       |
 |     [print_type.c](./print_type.c)      |      Calls the appropriate function and returns the result of that function    |
 |     [print_binary.c](./print_binary.c)      |       Prints a positive integer in binary and returns characters printed.      |
-|     [print_char.c](./print_char.c)      |      Prints a single character and returns 1.       |
-|     [print_hex.c](./print_hex.c)      |      Prints a positive integer in lowercase hexidecimal and returns characters printed.       |
+|     [print_hex.c](./print_hex.c)      |      Prints a positive integer in upper or lowercase hexidecimal and returns characters printed.       |
 |     [print_int.c](./print_int.c)      |      Prints an integer and returns characters printed.       |
 |     [print_octal.c](./print_octal.c)      |      Prints a positive integer in octal format and returns characters printed.       |
 |     [print_str.c](./print_str.c)      |      Prints a string returns characters printed.       |
-|     [print_uhex.c](./print_uhex.c)      |      Prints an integer in uppercase hexidecimal and returns characters printed.          |
-|     [print_unsigned_int.c](./print_unsigned_int.c)      |      Prints a positive integer and returns characters printed.       |
+|     [print_unsigned_int.c](./print_unsigned.c)      |      Prints a positive integer and returns characters printed.       |
 |     [hex_switch.c](./hex_switch.c)      |      Converts a decimal number into hex and returns pointer to a string       |
 |     [print_float.c](./print_float.c)      |      Prints a float and returns printed characters      |
 
